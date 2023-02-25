@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Addlist": [
+    {
+      "email": "hgfhvj",
+      "first_name": "tygjhbghyu",
+      "last_name": "yjbyu",
+      "avatar": "hujhgyuj",
+      "id": 2
+    },
+    {
+      "email": "gfhjvabcd",
+      "first_name": "gfyhbhg",
+      "last_name": "jhbhyf",
+      "avatar": "jbvhgjh",
+      "id": 3
+    },
+    {
+      "email": "tfy",
+      "first_name": "ftygyt",
+      "last_name": "yugyt",
+      "avatar": "fyugyug",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

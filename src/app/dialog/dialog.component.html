@@ -1,0 +1,39 @@
+<h1 mat-dialog-title>Add </h1>
+<div mat-dialog-content>
+    <form [formGroup]="myform">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput placeholder="Placeholder" />
+
+        </mat-form-field>
+        <span  class="text-danger" *ngIf ="myform.controls['email'].dirty && myform.hasError('required','email')">*email is required</span>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Firstname</mat-label>
+            <input formControlName="first_name" matInput placeholder="Placeholder" />
+            
+        </mat-form-field>
+        <span  class="text-danger" *ngIf ="myform.controls['first_name'].dirty && myform.hasError('required','first_name')">*firstname is required</span>
+
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input formControlName="last_name" matInput placeholder="Placeholder" />
+
+        </mat-form-field>
+        <span class="text-danger" *ngIf= "myform.controls['last_name'].dirty && myform.hasError('required','last_name')">*lastname is required</span>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Avatar</mat-label>
+            <input formControlName="avatar" matInput placeholder="Placeholder" />
+
+        </mat-form-field>
+        <span class="text-danger" *ngIf= "myform.controls['avatar'].dirty && myform.hasError('required','avatar')">*lastname is required</span>
+
+    </form>
+</div>
+
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>close</button>
+    <button style="margin-left:8px" mat-raised-button color="primary"  (click)="add()" >{{actionbtn}}</button>
+</div>
